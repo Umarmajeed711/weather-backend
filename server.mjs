@@ -1,5 +1,5 @@
 import express from 'express'
-// import cors from "cors";
+import cors from "cors";
 
 const app = express()
 const port = process.env.PORT || 5001
@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 /// http://localhost:5001/get-weather?zip=78500&city=karachi
 // in the query parameter all the parameters are optional and order of parameter does 't matter.
 
-// app.use(cors())
+app.use(cors())
 
 app.get('/get-weather/:cityName' , (req , res) => {
   

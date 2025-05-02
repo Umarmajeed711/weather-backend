@@ -31,9 +31,10 @@ app.get('/get-weather/:cityName' , (req , res) => {
       "temperature" : 40, 
       "humidity": 39, 
       "wind": "50 km/h",
-      "min": 30,
-      "max": 42,
-      "feelslike": 45
+      "temp_c": 30,
+      "temp_f": 42,
+      "feelslike": 45,
+      "country": "Pakistan"
     }
   }else if(city == "lahore"){
     apiRes = {
@@ -41,9 +42,10 @@ app.get('/get-weather/:cityName' , (req , res) => {
       "temperature" : 36, 
       "humidity": 45, 
       "wind": "520 km/h",
-      "min": 30,
-      "max": 42,
-      "feelslike": 37
+      "temp_c": 30,
+      "temp_f": 42,
+      "feelslike": 37,
+      "country": "Pakistan"
     }
   }
   else if(city == "islamabad"){
@@ -52,9 +54,10 @@ app.get('/get-weather/:cityName' , (req , res) => {
       "temperature" : 32, 
       "humidity": 34, 
       "wind": "60 km/h",
-      "min": 30,
-      "max": 36,
-      "feelslike": 33
+      "temp_c": 30,
+      "temp_f": 36,
+      "feelslike": 33,
+      "country": "Pakistan"
   }}
   else if(city == "hyderabad"){
 
@@ -63,9 +66,10 @@ app.get('/get-weather/:cityName' , (req , res) => {
       "temperature" : 38, 
       "humidity": 44, 
       "wind": "40 km/h",
-      "min": 36,
-      "max": 40,
-      "feelslike": 39
+      "temp_c": 36,
+      "temp_f": 40,
+      "feelslike": 39,
+      "country": "Pakistan"
     }
 
   }
@@ -76,9 +80,10 @@ app.get('/get-weather/:cityName' , (req , res) => {
       "temperature" : 40, 
       "humidity": 45, 
       "wind": "50 km/h",
-      "min": 36,
-      "max": 40,
-      "feelslike": 39
+      "temp_c": 36,
+      "temp_f": 40,
+      "feelslike": 39,
+      "country": "Pakistan"
     }
   }
   else{
@@ -87,8 +92,8 @@ app.get('/get-weather/:cityName' , (req , res) => {
       "temperature" : 40, 
       "humidity": 39, 
       "wind": "50 km/h",
-      "min": 30,
-      "max": 42,
+      "temp_c": 30,
+      "temp_f": 42,
       "feelslike": 45
     }
   }
